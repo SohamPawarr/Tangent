@@ -145,7 +145,7 @@ export default function KanseiValvesUI() {
           <img src="/hero-image-placeholder.jpg" alt="Industrial Valves" className="w-full h-[500px]" />
           <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70"></div>
           <div className="absolute inset-0 flex flex-col items-start justify-center text-white p-8 md:p-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Welcome to Kansei Valves</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Welcome to SMP Controls</h2>
             <p className="text-lg md:text-xl mb-6 max-w-lg">Your trusted partner for high-quality industrial valves and exceptional service</p>
             <ShimmerButton>Explore Our Products</ShimmerButton>
           </div>
@@ -193,7 +193,7 @@ export default function KanseiValvesUI() {
 
         {/* Why Choose Us Section */}
         <section className="mb-16 bg-gray-100 py-12 px-8 rounded-lg">
-          <h2 className="text-3xl font-bold mb-8 text-center">Why Choose Kansei Valves?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Why Choose SMP Controls?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className=" text-black rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
@@ -231,7 +231,7 @@ export default function KanseiValvesUI() {
       <footer className="bg-gray-800 text-white py-12 px-6 md:px-12 lg:px-24">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Kansei Valves</h3>
+            <h3 className="text-lg font-semibold mb-4">SMP Controls</h3>
             <p className="text-sm mb-4">
               Leading manufacturer of high-quality industrial valves for various applications.
             </p>
