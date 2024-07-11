@@ -99,11 +99,11 @@ export default function KanseiValvesUI() {
         <div className="flex items-center space-x-6">
           <div className="flex items-center">
             <Phone className="h-4 w-4 mr-2 text-orange-500" />
-            <span className="text-sm">+91-22-25826629</span>
+            <span className="text-sm">+91</span>
           </div>
           <div className="flex items-center">
             <Mail className="h-4 w-4 mr-2 text-orange-500" />
-            <span className="text-sm">sales@kanseivalves.com</span>
+            <span className="text-sm">sales@smpcontrol.com</span>
           </div>
         </div>
       </header>
@@ -172,14 +172,14 @@ export default function KanseiValvesUI() {
 
         {/* About Us Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">About Kansei Valves</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">About Tangent Valves</h2>
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-6 md:mb-0 md:pr-8">
               <img src="/about-us-image.jpg" alt="About Kansei Valves" className="rounded-lg shadow-lg" />
             </div>
             <div className="md:w-1/2">
               <p className="text-lg mb-4">
-                Kansei Valves is a leading manufacturer and supplier of high-quality industrial valves. With over 20 years of experience, we provide innovative solutions for various industries including oil & gas, petrochemical, power generation, and water treatment.
+                Tangent Valves is a leading manufacturer and supplier of high-quality industrial valves. With over 7 years of experience, we provide innovative solutions for various industries including oil & gas, petrochemical, power generation, and water treatment.
               </p>
               <p className="text-lg mb-4">
                 Our commitment to quality, reliability, and customer satisfaction has made us a trusted partner for businesses worldwide.
@@ -270,7 +270,7 @@ export default function KanseiValvesUI() {
               </p>
               <p className="flex items-center">
                 <Mail className="h-5 w-5 mr-2" />
-                sales@kanseivalves.com
+                sales@smpcontrols.com
               </p>
             </address>
           </div>
@@ -286,7 +286,7 @@ export default function KanseiValvesUI() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm">
-          <p>&copy; 2023 Kansei Valves. All rights reserved.</p>
+          <p>&copy; 2023 SMP Valves. All rights reserved.</p>
         </div>
       </footer>
     </div>
