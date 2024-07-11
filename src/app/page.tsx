@@ -88,13 +88,10 @@ export default function KanseiValvesUI() {
       {/* Header */}
       <header className="bg-gray-100 py-3 px-6 md:px-12 lg:px-24 flex items-center justify-between">
         <div className="flex items-center">
-          <img src="/pawarlogo.svg" alt="Kansei Valves Logo" className="h-10 mr-2" />
+          <img src="/pawarlogo.svg" alt="Tangent Valves Logo" className="h-10 mr-2" />
           
           <h1 className="text-black text-3xl font-bold">
             Tangent</h1>
-           
-
-
         </div>
         <div className="flex items-center space-x-6">
           <div className="flex items-center">
@@ -152,23 +149,40 @@ export default function KanseiValvesUI() {
         </div>
 
         {/* Product Categories */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">Our Product Range</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {productCategories.map((category) => (
-              <Card key={category.name} className="transition-transform hover:scale-105">
-                <CardHeader>
-                  <CardTitle>{category.name}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <img src={`/product-${category.name.toLowerCase().replace(' ', '-')}.jpg`} alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
-                  <p className="text-gray-600">{category.description}</p>
-                  <Button className="mt-4 w-full">Learn More</Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
+<section className="mb-16">
+  <h2 className="text-3xl font-bold mb-8 text-center">Our Product Range</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {productCategories.map((category) => (
+      <Card key={category.name} className="transition-transform hover:scale-105">
+        <CardHeader>
+          <CardTitle>{category.name}</CardTitle>
+        </CardHeader>
+        <CardContent>
+          {category.name === "Butterfly Valve" && (
+            <img src="/butterfly-valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
+          )}
+          {category.name === "Ball Valve" && (
+            <img src="/ball-valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
+          )}
+          {category.name === "Gate Valve" && (
+            <img src="/gate-valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
+          )}
+          {category.name === "Globe Valve" && (
+            <img src="/globe-valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
+          )}
+          {category.name === "Check Valve" && (
+            <img src="/check-valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
+          )}
+          {category.name === "Plug Valve" && (
+            <img src="/plug-valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
+          )}
+          <p className="text-gray-600">{category.description}</p>
+          <Button className="mt-4 w-full">Learn More</Button>
+        </CardContent>
+      </Card>
+    ))}
+  </div>
+</section>
 
         {/* About Us Section */}
         <section className="mb-16">
@@ -286,7 +300,7 @@ export default function KanseiValvesUI() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm">
-          <p>&copy; 2023 SMP Valves. All rights reserved.</p>
+          <p>&copy; 2024 SMP Valves. All rights reserved.</p>
         </div>
       </footer>
     </div>
