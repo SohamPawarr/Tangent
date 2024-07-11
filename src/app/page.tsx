@@ -159,22 +159,22 @@ export default function KanseiValvesUI() {
         </CardHeader>
         <CardContent>
           {category.name === "Butterfly Valve" && (
-            <img src="/butterfly-valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
+            <img src="/butterfly_valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
           )}
           {category.name === "Ball Valve" && (
-            <img src="/ball-valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
+            <img src="/ball_valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
           )}
           {category.name === "Gate Valve" && (
-            <img src="/gate-valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
+            <img src="/gate_valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
           )}
           {category.name === "Globe Valve" && (
-            <img src="/globe-valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
+            <img src="/globe_valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
           )}
           {category.name === "Check Valve" && (
-            <img src="/check-valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
+            <img src="/check_valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
           )}
           {category.name === "Plug Valve" && (
-            <img src="/plug-valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
+            <img src="/plug_valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
           )}
           <p className="text-gray-600">{category.description}</p>
           <Button className="mt-4 w-full">Learn More</Button>
