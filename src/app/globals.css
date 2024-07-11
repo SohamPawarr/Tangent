@@ -1,33 +1,41 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+  
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+    --background: 25 10% 98%;
+    --foreground: 16 80% 15%;
+    --primary: 25 90% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 16 70% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 170 80% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 74% 65%;
+    --destructive-foreground: 0 0% 100%;
+    --muted: 25 5% 93%;
+    --muted-foreground: 16 60% 40%;
+    --card: 25 8% 95%;
+    --card-foreground: 16 80% 15%;
+    --popover: 25 12% 90%;
+    --popover-foreground: 16 80% 15%;
+    --border: 25 20% 90%;
+    --input: 25 15% 85%;
+    --ring: 170 70% 50%;
+    --radius: 0.75rem;
+    }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  @layer base {
+    * {
+      @apply border-border;
+    }
+  
+    body {
+      @apply bg-background text-foreground font-body;
+    }
+  
+    h1, h2, h3, h4, h5, h6 {
+      @apply font-heading;
+    }
   }
-}
