@@ -46,14 +46,19 @@ const navigationLinks = [
   "Career",
   "Contact",
 ];
-
+// description: "Ideal for on-off and throttling services."
+// description: "Excellent for high pressure and temperature applications."
+// description: "Perfect for fully open or fully closed service."
+// description: "Designed for regulating flow in a pipeline."
+// description: "Prevents backflow in piping systems."
+//  description: "Suitable for slurry, viscous, and general applications."
 const productCategories = [
-  { name: "Butterfly Valve", description: "Ideal for on-off and throttling services." },
-  { name: "Ball Valve", description: "Excellent for high pressure and temperature applications." },
-  { name: "Gate Valve", description: "Perfect for fully open or fully closed service." },
-  { name: "Globe Valve", description: "Designed for regulating flow in a pipeline." },
-  { name: "Check Valve", description: "Prevents backflow in piping systems." },
-  { name: "Plug Valve", description: "Suitable for slurry, viscous, and general applications." },
+  { name: "Butterfly Valve"},
+  { name: "Ball Valve"  },
+  { name: "Gate Valve" },
+  { name: "Globe Valve" },
+  { name: "Check Valve"  },
+  { name: "Plug Valve" }
 ];
 function Contact() {
   return (
@@ -176,7 +181,7 @@ export default function KanseiValvesUI() {
           {category.name === "Plug Valve" && (
             <img src="/plug_valve.jpg" alt={category.name} className="w-full h-48 object-cover mb-4 rounded" />
           )}
-          <p className="text-gray-600">{category.description}</p>
+          <p className="text-gray-600"></p>
           <Button className="mt-4 w-full">Learn More</Button>
         </CardContent>
       </Card>
