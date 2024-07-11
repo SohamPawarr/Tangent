@@ -139,7 +139,7 @@ export default function KanseiValvesUI() {
       <main className="py-8 px-6 md:px-12 lg:px-24">
         {/* Hero Banner */}
         <div className="relative rounded-lg overflow-hidden mb-16">
-          <img src="/hero-image-placeholder.jpg" alt="Industrial Valves" className="w-full h-[500px]" />
+          <img src="D:\Engineering\Third Year\SMP\Tangent_Pawar\src\app\hero-image-placeholder.jpg" alt="Industrial Valves" className="w-full h-[500px]" />
           <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70"></div>
           <div className="absolute inset-0 flex flex-col items-start justify-center text-white p-8 md:p-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Welcome to SMP Controls</h2>
