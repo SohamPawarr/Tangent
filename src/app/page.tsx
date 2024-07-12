@@ -154,37 +154,37 @@ export default function KanseiValvesUI() {
         </div>
 
         {/* Product Categories */}
-<section className="mb-16">
+        <section className="mb-16">
   <h2 className="text-3xl font-bold mb-8 text-center">Our Product Range</h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
     {productCategories.map((category) => (
       <Card key={category.name} className="transition-transform hover:scale-105">
-      <CardHeader>
-        <CardTitle>{category.name}</CardTitle>
-      </CardHeader>
-      <CardContent>
-        {category.name === "Butterfly Valve" && (
-          <img src="/butterfly_valve.jpg" alt={category.name} className="w-full h-full object-cover rounded" />
-        )}
-        {category.name === "Ball Valve" && (
-          <img src="/ball_valve.jpg" alt={category.name} className="w-full h-full object-cover rounded" />
-        )}
-        {category.name === "Gate Valve" && (
-          <img src="/gate_valve.jpg" alt={category.name} className="w-full h-full object-cover rounded" />
-        )}
-        {category.name === "Globe Valve" && (
-          <img src="/globe_valve.jpg" alt={category.name} className="w-full h-full object-cover rounded" />
-        )}
-        {category.name === "Check Valve" && (
-          <img src="/check_valve.jpg" alt={category.name} className="w-full h-full object-cover rounded" />
-        )}
-        {category.name === "Plug Valve" && (
-          <img src="/plug_valve.jpg" alt={category.name} className="w-full h-full object-cover rounded" />
-        )}
-        <p className="text-gray-600"></p>
-        <Button className="mt-4 w-full">Learn More</Button>
-      </CardContent>
-    </Card>
+        <CardHeader>
+          <CardTitle>{category.name}</CardTitle>
+        </CardHeader>
+        <CardContent>
+          {category.name === "Butterfly Valve" && (
+            <img src="/butterfly_valve.jpg" alt={category.name} className="w-full h-full object-cover rounded" />
+          )}
+          {category.name === "Ball Valve" && (
+            <img src="/ball_valve.jpg" alt={category.name} className="w-full h-full object-cover rounded" />
+          )}
+          {category.name === "Gate Valve" && (
+            <img src="/gate_valve.jpg" alt={category.name} className="w-full h-full object-cover rounded" />
+          )}
+          {category.name === "Globe Valve" && (
+            <img src="/globe_valve.jpg" alt={category.name} className="w-full h-full object-cover rounded" />
+          )}
+          {category.name === "Check Valve" && (
+            <img src="/check_valve.jpg" alt={category.name} className="w-full h-full object-cover rounded" />
+          )}
+          {category.name === "Plug Valve" && (
+            <img src="/plug_valve.jpg" alt={category.name} className="w-full h-full object-cover rounded" />
+          )}
+          <p className="text-gray-600"></p>
+          <Button className="mt-4 w-full">Learn More</Button>
+        </CardContent>
+      </Card>
     ))}
   </div>
 </section>
@@ -194,7 +194,7 @@ export default function KanseiValvesUI() {
           <h2 className="text-3xl font-bold mb-8 text-center">About Tangent Valves</h2>
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-6 md:mb-0 md:pr-8">
-              <img src="/about-us-image.jpg" alt="About Kansei Valves" className="rounded-lg shadow-lg" />
+              <img src="/about-us-image.jpg" alt="About Tangent Valves" className="rounded-lg shadow-lg" />
             </div>
             <div className="md:w-1/2">
               <p className="text-lg mb-4">
