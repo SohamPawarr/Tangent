@@ -66,3 +66,8 @@
   animation: marquee-reverse 40s linear infinite;
 }
 
+.orange-bullet {
+  list-style-type: disc;
+  color: orange;
+}
+
