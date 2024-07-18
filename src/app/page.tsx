@@ -25,6 +25,7 @@ import { Input } from "@/components/ui/input";
 import ShimmerButton from "@/components/magicui/shimmer-button";
 import Link from "next/link";
 import { WobbleCard } from "@/components/ui/wobble-card";
+import GradualSpacing from "@/components/magicui/gradual-spacing";
 
 const navigationLinks = [
   "Home",
@@ -135,7 +136,7 @@ export default function SMPValvesUI() {
         </div>
       </header>
 
-      <nav className="bg-orange-600 py-4 px-6 md:px-12 lg:px-24">
+      <nav className="bg-[#FB8C00] py-4 px-6 md:px-12 lg:px-24">
         <ul className="flex items-center justify-center space-x-12 text-white">
           <li>
             <Link
@@ -177,7 +178,7 @@ export default function SMPValvesUI() {
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
-                    href="/butterfly"
+                    href="/Gate"
                     className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Gate Valve
@@ -185,7 +186,7 @@ export default function SMPValvesUI() {
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
-                    href="/butterfly"
+                    href="/Globe"
                     className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Globe Valve
@@ -193,19 +194,19 @@ export default function SMPValvesUI() {
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
-                    href="/butterfly"
+                    href="/Check"
                     className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Check Valve
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link
+                  {/* <Link
                     href="/butterfly"
                     className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Plug Valve
-                  </Link>
+                  </Link> */}
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -226,7 +227,7 @@ export default function SMPValvesUI() {
               Clientele
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               href="/infrastructure"
               className="flex items-center hover:text-blue-200 transition-colors"
@@ -241,7 +242,7 @@ export default function SMPValvesUI() {
             >
               Career
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               href="/contact"
@@ -268,10 +269,11 @@ export default function SMPValvesUI() {
               className="text-4xl md:text-5xl font-bold"
               text="Welcome to SMP Controls"
             />
-            <p className="text-lg md:text-xl mb-6 max-w-lg">
-              Your trusted partner for high-quality industrial valves and
-              exceptional service
-            </p>
+            <GradualSpacing
+              className="font-display text-center text-4xl font-bold tracking-[-0.1em]  text-white dark:text-white md:text-3xl md:leading-[5rem]"
+              text="Your trusted partner for high-quality industrial valves and
+              exceptional service"
+            />
           </div>
         </div>
         {/* Product Categories */}
@@ -281,18 +283,20 @@ export default function SMPValvesUI() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {productCategories.map((category) => (
-              <WobbleCard
+              <Card
                 key={category.name}
-                className="transition-transform hover:scale-105 bg-orange-200" // Change here
+                className="transition-transform hover:scale-105 bg-[#FB8C00]"
               >
                 <CardHeader>
                   <CardTitle>{category.name}</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex flex-col items-center">
+                  {" "}
+                  {/* Centering content */}
                   {/* Placeholder images */}
                   {category.name === "Butterfly Valve" && (
                     <img
-                      src="/butterfly_valve.jpg"
+                      src="Butterfly valve/butterfly_valve.jpg"
                       alt={category.name}
                       className="w-full h-full object-cover rounded"
                     />
@@ -332,9 +336,57 @@ export default function SMPValvesUI() {
                       className="w-full h-full object-cover rounded"
                     />
                   )}
-                  <Button className="mt-4 w-full">Learn More</Button>
+                  {/* Learn More Links */}
+                  {category.name === "Butterfly Valve" && (
+                    <Link
+                      href="/butterfly"
+                      className="mt-4 w-full flex justify-center"
+                    >
+                      <ShimmerButton>Learn more</ShimmerButton>
+                    </Link>
+                  )}
+                  {category.name === "Ball Valve" && (
+                    <Link
+                      href="/ball"
+                      className="mt-4 w-full flex justify-center"
+                    >
+                      <ShimmerButton>Learn more</ShimmerButton>
+                    </Link>
+                  )}
+                  {category.name === "Gate Valve" && (
+                    <Link
+                      href="/Gate"
+                      className="mt-4 w-full flex justify-center"
+                    >
+                      <ShimmerButton>Learn more</ShimmerButton>
+                    </Link>
+                  )}
+                  {category.name === "Globe Valve" && (
+                    <Link
+                      href="/Globe"
+                      className="mt-4 w-full flex justify-center"
+                    >
+                      <ShimmerButton>Learn more</ShimmerButton>
+                    </Link>
+                  )}
+                  {category.name === "Check Valve" && (
+                    <Link
+                      href="/Check"
+                      className="mt-4 w-full flex justify-center"
+                    >
+                      <ShimmerButton>Learn more</ShimmerButton>
+                    </Link>
+                  )}
+                  {category.name === "Plug Valve" && (
+                    <Link
+                      href="/Plug"
+                      className="mt-4 w-full flex justify-center"
+                    >
+                      <ShimmerButton>Learn more</ShimmerButton>
+                    </Link>
+                  )}
                 </CardContent>
-              </WobbleCard>
+              </Card>
             ))}
           </div>
         </section>
@@ -354,7 +406,7 @@ export default function SMPValvesUI() {
                     className="rounded-lg shadow-lg w-32 h-32 object-contain"
                   />
                   <img
-                    src="/butterfly-valve-150-class.png"
+                    src="Butterfly valve/butterfly-valve-150-class.png"
                     alt="Butterfly Valve 150 Class"
                     className="rounded-lg shadow-lg w-32 h-32 object-contain"
                   />
@@ -394,7 +446,7 @@ export default function SMPValvesUI() {
           </div>
         </section>
         {/* Why Choose Us Section */}
-        <section className="mb-16 bg-gray-100 py-12 px-8 rounded-lg">
+        <section className="mb-16 bg-orange-400 py-12 px-8 rounded-lg">
           <h2 className="text-3xl font-bold mb-8 text-center">
             Why Choose SMP Controls?
           </h2>
@@ -517,16 +569,16 @@ export default function SMPValvesUI() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">
+                <a href="#" className="hover:text-[#E65100] transition-colors">
                   <DropdownMenu>
-                    <DropdownMenuTrigger className="flex items-center hover:text-blue-200 transition-colors">
+                    <DropdownMenuTrigger className="flex items-center hover:text-[#FFD180] transition-colors">
                       Products <ChevronDown className="ml-1 h-4 w-4" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent>
                       <DropdownMenuItem>
                         <Link
                           href="/butterfly"
-                          className="flex items-center hover:text-blue-200 transition-colors"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
                         >
                           ButterFly Valve
                         </Link>
@@ -534,7 +586,7 @@ export default function SMPValvesUI() {
                       <DropdownMenuItem>
                         <Link
                           href="/ball"
-                          className="flex items-center hover:text-blue-200 transition-colors"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
                         >
                           Ball Valve
                         </Link>
@@ -542,7 +594,7 @@ export default function SMPValvesUI() {
                       <DropdownMenuItem>
                         <Link
                           href="/Gate"
-                          className="flex items-center hover:text-blue-200 transition-colors"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
                         >
                           Gate Valve
                         </Link>
@@ -550,7 +602,7 @@ export default function SMPValvesUI() {
                       <DropdownMenuItem>
                         <Link
                           href="/Globe"
-                          className="flex items-center hover:text-blue-200 transition-colors"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
                         >
                           Globe Valve
                         </Link>
@@ -558,7 +610,7 @@ export default function SMPValvesUI() {
                       <DropdownMenuItem>
                         <Link
                           href="/Check"
-                          className="flex items-center hover:text-blue-200 transition-colors"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
                         >
                           Check Valve
                         </Link>
@@ -566,7 +618,7 @@ export default function SMPValvesUI() {
                       <DropdownMenuItem>
                         <Link
                           href="/Plug"
-                          className="flex items-center hover:text-blue-200 transition-colors"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
                         >
                           Plug Valve
                         </Link>
@@ -576,12 +628,12 @@ export default function SMPValvesUI() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">
+                <a href="/quality" className="hover:text-[#E65100] transition-colors">
                   Quality
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">
+                <a href="/contact" className="hover:text-[#E65100] transition-colors">
                   Contact
                 </a>
               </li>

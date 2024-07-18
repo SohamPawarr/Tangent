@@ -89,7 +89,7 @@ export default function SMPValvesUI() {
         </div>
       </header>
 
-      <nav className="bg-orange-600 py-4 px-6 md:px-12 lg:px-24">
+      <nav className="bg-[#FB8C00] py-4 px-6 md:px-12 lg:px-24">
         <ul className="flex items-center justify-center space-x-12 text-white">
           <li>
             <Link
@@ -208,7 +208,7 @@ export default function SMPValvesUI() {
       </nav>
       {/* Categories and Types Section */}
       <section className="py-12 px-6 md:px-12 lg:px-24 bg-gray-100">
-        <h2 className="text-2xl font-bold mb-6 text-orange-600">
+        <h2 className="text-2xl font-bold mb-6 text-orange-800">
           Categories and Types
         </h2>
 

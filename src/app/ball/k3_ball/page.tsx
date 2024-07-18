@@ -89,7 +89,7 @@ export default function SMPValvesUI() {
         </div>
       </header>
 
-      <nav className="bg-orange-600 py-4 px-6 md:px-12 lg:px-24">
+      <nav className="bg-[#FB8C00] py-4 px-6 md:px-12 lg:px-24">
         <ul className="flex items-center justify-center space-x-12 text-white">
           <li>
             <Link
@@ -367,76 +367,71 @@ export default function SMPValvesUI() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">
-                  <a
-                    href="#"
-                    className="hover:text-orange-400 transition-colors"
-                  >
-                    <DropdownMenu>
-                      <DropdownMenuTrigger className="flex items-center hover:text-blue-200 transition-colors">
-                        Products <ChevronDown className="ml-1 h-4 w-4" />
-                      </DropdownMenuTrigger>
-                      <DropdownMenuContent>
-                        <DropdownMenuItem>
-                          <Link
-                            href="/butterfly"
-                            className="flex items-center hover:text-blue-200 transition-colors"
-                          >
-                            ButterFly Valve
-                          </Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem>
-                          <Link
-                            href="/ball"
-                            className="flex items-center hover:text-blue-200 transition-colors"
-                          >
-                            Ball Valve
-                          </Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem>
-                          <Link
-                            href="/Gate"
-                            className="flex items-center hover:text-blue-200 transition-colors"
-                          >
-                            Gate Valve
-                          </Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem>
-                          <Link
-                            href="/Globe"
-                            className="flex items-center hover:text-blue-200 transition-colors"
-                          >
-                            Globe Valve
-                          </Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem>
-                          <Link
-                            href="/Check"
-                            className="flex items-center hover:text-blue-200 transition-colors"
-                          >
-                            Check Valve
-                          </Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem>
-                          <Link
-                            href="/Plug"
-                            className="flex items-center hover:text-blue-200 transition-colors"
-                          >
-                            Plug Valve
-                          </Link>
-                        </DropdownMenuItem>
-                      </DropdownMenuContent>
-                    </DropdownMenu>
-                  </a>
+                <a href="#" className="hover:text-[#E65100] transition-colors">
+                  <DropdownMenu>
+                    <DropdownMenuTrigger className="flex items-center hover:text-[#FFD180] transition-colors">
+                      Products <ChevronDown className="ml-1 h-4 w-4" />
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent>
+                      <DropdownMenuItem>
+                        <Link
+                          href="/butterfly"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
+                        >
+                          ButterFly Valve
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem>
+                        <Link
+                          href="/ball"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
+                        >
+                          Ball Valve
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem>
+                        <Link
+                          href="/Gate"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
+                        >
+                          Gate Valve
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem>
+                        <Link
+                          href="/Globe"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
+                        >
+                          Globe Valve
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem>
+                        <Link
+                          href="/Check"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
+                        >
+                          Check Valve
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem>
+                        <Link
+                          href="/Plug"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
+                        >
+                          Plug Valve
+                        </Link>
+                      </DropdownMenuItem>
+                    </DropdownMenuContent>
+                  </DropdownMenu>
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">
+                <a href="#" className="hover:text-[#E65100] transition-colors">
                   Quality
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">
+                <a href="#" className="hover:text-[#E65100] transition-colors">
                   Contact
                 </a>
               </li>

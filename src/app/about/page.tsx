@@ -102,35 +102,121 @@ export default function AboutPage() {
         </header>
 
         {/* Navigation */}
-        <nav className="bg-orange-600 py-4 px-6 md:px-12 lg:px-24">
+        <nav className="bg-[#FB8C00] py-4 px-6 md:px-12 lg:px-24">
           <ul className="flex items-center justify-center space-x-12 text-white">
-            {navigationLinks.map((link) => (
-              <li key={typeof link === "string" ? link : link.name}>
-                {typeof link === "string" ? (
-                  <button
-                    onClick={() => setActiveLink(link)}
-                    className={`hover:text-blue-200 transition-colors ${
-                      activeLink === link
-                        ? "font-medium border-b-2 border-white"
-                        : ""
-                    }`}
+            <li>
+              <Link
+                href="/"
+                className="flex items-center hover:text-blue-200 transition-colors"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/about"
+                className="flex items-center hover:text-blue-200 transition-colors"
+              >
+                About Us
+              </Link>
+            </li>
+            <li>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="flex items-center hover:text-blue-200 transition-colors">
+                  Products <ChevronDown className="ml-1 h-4 w-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <DropdownMenuItem>
+                    <Link
+                      href="/butterfly"
+                      className="flex items-center hover:text-blue-200 transition-colors"
+                    >
+                      ButterFly Valve
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    <Link
+                      href="/ball"
+                      className="flex items-center hover:text-blue-200 transition-colors"
+                    >
+                      Ball Valve
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    <Link
+                      href="/Gate"
+                      className="flex items-center hover:text-blue-200 transition-colors"
+                    >
+                      Gate Valve
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    <Link
+                      href="/Globe"
+                      className="flex items-center hover:text-blue-200 transition-colors"
+                    >
+                      Globe Valve
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    <Link
+                      href="/Check"
+                      className="flex items-center hover:text-blue-200 transition-colors"
+                    >
+                      Check Valve
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    {/* <Link
+                    href="/butterfly"
+                    className="flex items-center hover:text-blue-200 transition-colors"
                   >
-                    {link}
-                  </button>
-                ) : (
-                  <DropdownMenu>
-                    <DropdownMenuTrigger className="flex items-center hover:text-blue-200 transition-colors">
-                      {link.name} <ChevronDown className="ml-1 h-4 w-4" />
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent>
-                      {link.submenu.map((item) => (
-                        <DropdownMenuItem key={item}>{item}</DropdownMenuItem>
-                      ))}
-                    </DropdownMenuContent>
-                  </DropdownMenu>
-                )}
-              </li>
-            ))}
+                    Plug Valve
+                  </Link> */}
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </li>
+            <li>
+              <Link
+                href="/quality"
+                className="flex items-center hover:text-blue-200 transition-colors"
+              >
+                Quality
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/client"
+                className="flex items-center hover:text-blue-200 transition-colors"
+              >
+                Clientele
+              </Link>
+            </li>
+            {/* <li>
+            <Link
+              href="/infrastructure"
+              className="flex items-center hover:text-blue-200 transition-colors"
+            >
+              Infrastructure
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/career"
+              className="flex items-center hover:text-blue-200 transition-colors"
+            >
+              Career
+            </Link>
+          </li> */}
+            <li>
+              <Link
+                href="/contact"
+                className="flex items-center hover:text-blue-200 transition-colors"
+              >
+                Contact
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
@@ -235,8 +321,7 @@ export default function AboutPage() {
           />
         </div>
         <br></br>
-        {/* Footer */}
-        <footer className="bg-orange-600 text-white py-12 px-6 md:px-12 lg:px-24">
+        <footer className="bg-orange-400 text-white py-12 px-6 md:px-12 lg:px-24">
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-lg font-semibold mb-4">SMP Controls</h3>
@@ -287,82 +372,77 @@ export default function AboutPage() {
                 <li>
                   <a
                     href="#"
-                    className="hover:text-orange-400 transition-colors"
+                    className="hover:text-[#E65100] transition-colors"
                   >
-                    <a
-                      href="#"
-                      className="hover:text-orange-400 transition-colors"
-                    >
-                      <DropdownMenu>
-                        <DropdownMenuTrigger className="flex items-center hover:text-blue-200 transition-colors">
-                          Products <ChevronDown className="ml-1 h-4 w-4" />
-                        </DropdownMenuTrigger>
-                        <DropdownMenuContent>
-                          <DropdownMenuItem>
-                            <Link
-                              href="/butterfly"
-                              className="flex items-center hover:text-blue-200 transition-colors"
-                            >
-                              ButterFly Valve
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem>
-                            <Link
-                              href="/ball"
-                              className="flex items-center hover:text-blue-200 transition-colors"
-                            >
-                              Ball Valve
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem>
-                            <Link
-                              href="/Gate"
-                              className="flex items-center hover:text-blue-200 transition-colors"
-                            >
-                              Gate Valve
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem>
-                            <Link
-                              href="/Globe"
-                              className="flex items-center hover:text-blue-200 transition-colors"
-                            >
-                              Globe Valve
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem>
-                            <Link
-                              href="/Check"
-                              className="flex items-center hover:text-blue-200 transition-colors"
-                            >
-                              Check Valve
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem>
-                            <Link
-                              href="/Plug"
-                              className="flex items-center hover:text-blue-200 transition-colors"
-                            >
-                              Plug Valve
-                            </Link>
-                          </DropdownMenuItem>
-                        </DropdownMenuContent>
-                      </DropdownMenu>
-                    </a>
+                    <DropdownMenu>
+                      <DropdownMenuTrigger className="flex items-center hover:text-[#FFD180] transition-colors">
+                        Products <ChevronDown className="ml-1 h-4 w-4" />
+                      </DropdownMenuTrigger>
+                      <DropdownMenuContent>
+                        <DropdownMenuItem>
+                          <Link
+                            href="/butterfly"
+                            className="flex items-center hover:text-[#FFD180] transition-colors"
+                          >
+                            ButterFly Valve
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem>
+                          <Link
+                            href="/ball"
+                            className="flex items-center hover:text-[#FFD180] transition-colors"
+                          >
+                            Ball Valve
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem>
+                          <Link
+                            href="/Gate"
+                            className="flex items-center hover:text-[#FFD180] transition-colors"
+                          >
+                            Gate Valve
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem>
+                          <Link
+                            href="/Globe"
+                            className="flex items-center hover:text-[#FFD180] transition-colors"
+                          >
+                            Globe Valve
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem>
+                          <Link
+                            href="/Check"
+                            className="flex items-center hover:text-[#FFD180] transition-colors"
+                          >
+                            Check Valve
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem>
+                          <Link
+                            href="/Plug"
+                            className="flex items-center hover:text-[#FFD180] transition-colors"
+                          >
+                            Plug Valve
+                          </Link>
+                        </DropdownMenuItem>
+                      </DropdownMenuContent>
+                    </DropdownMenu>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
-                    className="hover:text-orange-400 transition-colors"
+                    href="/quality"
+                    className="hover:text-[#E65100] transition-colors"
                   >
                     Quality
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
-                    className="hover:text-orange-400 transition-colors"
+                    href="/contact"
+                    className="hover:text-[#E65100] transition-colors"
                   >
                     Contact
                   </a>
@@ -397,7 +477,7 @@ export default function AboutPage() {
                   placeholder="Enter your email"
                   className="flex-grow py-2 px-4 rounded-l-md text-gray-800"
                 />
-                <Button className="bg-orange-500 hover:bg-orange-500 py-2 px-4 rounded-r-md transition-colors">
+                <Button className="bg-orange-500 hover:bg-orange-600 py-2 px-4 rounded-r-md transition-colors">
                   Subscribe
                 </Button>
               </form>
