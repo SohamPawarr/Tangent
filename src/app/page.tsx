@@ -59,45 +59,55 @@ const productCategories = [
 
 function Contact() {
   return (
-    <section id="contact" className="py-16">
+    <section id="contact" className="py-16 bg-orange-100">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
-        <p className="text-lg md:text-xl mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-orange-800">
+          Contact Us
+        </h2>
+        <p className="text-lg md:text-xl mb-8 text-orange-700">
           Get in touch with us for more information about our products and
           services.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <Label htmlFor="name">Name</Label>
+            <Label htmlFor="name" className="text-orange-800">
+              Name
+            </Label>
             <Input
               id="name"
               type="text"
               placeholder="Your Name"
-              className="mb-4"
+              className="mb-4 border border-orange-600"
             />
           </div>
           <div>
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="email" className="text-orange-800">
+              Email
+            </Label>
             <Input
               id="email"
               type="email"
               placeholder="Your Email"
-              className="mb-4"
+              className="mb-4 border border-orange-600"
             />
           </div>
           <div className="col-span-2">
-            <Label htmlFor="message">Message</Label>
+            <Label htmlFor="message" className="text-orange-800">
+              Message
+            </Label>
             <Input
               id="message"
               type="text"
               placeholder="Your Message"
-              className="mb-4"
+              className="mb-4 border border-orange-600"
             />
           </div>
         </div>
         <div className="flex items-center justify-center">
-          <ShimmerButton>Send Us</ShimmerButton>
-        </div>{" "}
+          <ShimmerButton className="bg-orange-600 text-white">
+            Send Us
+          </ShimmerButton>
+        </div>
       </div>
     </section>
   );
@@ -201,12 +211,12 @@ export default function SMPValvesUI() {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  {/* <Link
-                    href="/butterfly"
+                  <Link
+                    href="/Plug"
                     className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Plug Valve
-                  </Link> */}
+                  </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -285,7 +295,7 @@ export default function SMPValvesUI() {
             {productCategories.map((category) => (
               <Card
                 key={category.name}
-                className="transition-transform hover:scale-105 bg-[#FB8C00]"
+                className="transition-transform hover:scale-105 bg-orange-200"
               >
                 <CardHeader>
                   <CardTitle>{category.name}</CardTitle>
@@ -522,6 +532,7 @@ export default function SMPValvesUI() {
       </main>
 
       <Contact />
+      <br></br>
       {/* Footer */}
       <footer className="bg-orange-400 text-white py-12 px-6 md:px-12 lg:px-24">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -628,12 +639,18 @@ export default function SMPValvesUI() {
                 </a>
               </li>
               <li>
-                <a href="/quality" className="hover:text-[#E65100] transition-colors">
+                <a
+                  href="/quality"
+                  className="hover:text-[#E65100] transition-colors"
+                >
                   Quality
                 </a>
               </li>
               <li>
-                <a href="/contact" className="hover:text-[#E65100] transition-colors">
+                <a
+                  href="/contact"
+                  className="hover:text-[#E65100] transition-colors"
+                >
                   Contact
                 </a>
               </li>

@@ -94,7 +94,7 @@ export default function SMPValvesUI() {
           <li>
             <Link
               href="/"
-              className="flex items-center hover:text-orange-200 transition-colors"
+              className="flex items-center hover:text-blue-200 transition-colors"
             >
               Home
             </Link>
@@ -102,61 +102,61 @@ export default function SMPValvesUI() {
           <li>
             <Link
               href="/about"
-              className="flex items-center hover:text-orange-200 transition-colors"
+              className="flex items-center hover:text-blue-200 transition-colors"
             >
               About Us
             </Link>
           </li>
           <li>
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center hover:text-orange-200 transition-colors">
+              <DropdownMenuTrigger className="flex items-center hover:text-blue-200 transition-colors">
                 Products <ChevronDown className="ml-1 h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>
                   <Link
-                    href="/butterfly"
-                    className="flex items-center hover:text-orange-200 transition-colors"
+                    href="/Butterfly"
+                    className="flex items-center hover:text-blue-200 transition-colors"
                   >
-                    ButterFly Valve
+                    Butterfly Valve
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
                     href="/ball"
-                    className="flex items-center hover:text-orange-200 transition-colors"
+                    className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Ball Valve
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
-                    href="/butterfly"
-                    className="flex items-center hover:text-orange-200 transition-colors"
+                    href="/Gate"
+                    className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Gate Valve
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
-                    href="/butterfly"
-                    className="flex items-center hover:text-orange-200 transition-colors"
+                    href="/Globe"
+                    className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Globe Valve
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
-                    href="/butterfly"
-                    className="flex items-center hover:text-orange-200 transition-colors"
+                    href="/Check"
+                    className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Check Valve
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
-                    href="/butterfly"
-                    className="flex items-center hover:text-orange-200 transition-colors"
+                    href="/Plug"
+                    className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Plug Valve
                   </Link>
@@ -167,7 +167,7 @@ export default function SMPValvesUI() {
           <li>
             <Link
               href="/quality"
-              className="flex items-center hover:text-orange-200 transition-colors"
+              className="flex items-center hover:text-blue-200 transition-colors"
             >
               Quality
             </Link>
@@ -175,15 +175,15 @@ export default function SMPValvesUI() {
           <li>
             <Link
               href="/client"
-              className="flex items-center hover:text-orange-200 transition-colors"
+              className="flex items-center hover:text-blue-200 transition-colors"
             >
               Clientele
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               href="/infrastructure"
-              className="flex items-center hover:text-orange-200 transition-colors"
+              className="flex items-center hover:text-blue-200 transition-colors"
             >
               Infrastructure
             </Link>
@@ -191,15 +191,15 @@ export default function SMPValvesUI() {
           <li>
             <Link
               href="/career"
-              className="flex items-center hover:text-orange-200 transition-colors"
+              className="flex items-center hover:text-blue-200 transition-colors"
             >
               Career
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               href="/contact"
-              className="flex items-center hover:text-orange-200 transition-colors"
+              className="flex items-center hover:text-blue-200 transition-colors"
             >
               Contact
             </Link>
@@ -453,6 +453,7 @@ export default function SMPValvesUI() {
       </section>
 
       {/* Footer */}
+      {/* Footer */}
       <footer className="bg-orange-400 text-white py-12 px-6 md:px-12 lg:px-24">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
@@ -558,12 +559,18 @@ export default function SMPValvesUI() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#E65100] transition-colors">
+                <a
+                  href="/quality"
+                  className="hover:text-[#E65100] transition-colors"
+                >
                   Quality
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#E65100] transition-colors">
+                <a
+                  href="/contact"
+                  className="hover:text-[#E65100] transition-colors"
+                >
                   Contact
                 </a>
               </li>

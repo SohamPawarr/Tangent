@@ -115,10 +115,10 @@ export default function SMPValvesUI() {
               <DropdownMenuContent>
                 <DropdownMenuItem>
                   <Link
-                    href="/butterfly"
+                    href="/Butterfly"
                     className="flex items-center hover:text-blue-200 transition-colors"
                   >
-                    ButterFly Valve
+                    Butterfly Valve
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
@@ -131,7 +131,7 @@ export default function SMPValvesUI() {
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
-                    href="/butterfly"
+                    href="/Gate"
                     className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Gate Valve
@@ -139,7 +139,7 @@ export default function SMPValvesUI() {
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
-                    href="/butterfly"
+                    href="/Globe"
                     className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Globe Valve
@@ -147,7 +147,7 @@ export default function SMPValvesUI() {
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
-                    href="/butterfly"
+                    href="/Check"
                     className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Check Valve
@@ -155,7 +155,7 @@ export default function SMPValvesUI() {
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
-                    href="/butterfly"
+                    href="/Plug"
                     className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Plug Valve
@@ -180,7 +180,7 @@ export default function SMPValvesUI() {
               Clientele
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               href="/infrastructure"
               className="flex items-center hover:text-blue-200 transition-colors"
@@ -195,7 +195,7 @@ export default function SMPValvesUI() {
             >
               Career
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               href="/contact"
@@ -703,12 +703,18 @@ export default function SMPValvesUI() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#E65100] transition-colors">
+                <a
+                  href="/quality"
+                  className="hover:text-[#E65100] transition-colors"
+                >
                   Quality
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#E65100] transition-colors">
+                <a
+                  href="/contact"
+                  className="hover:text-[#E65100] transition-colors"
+                >
                   Contact
                 </a>
               </li>

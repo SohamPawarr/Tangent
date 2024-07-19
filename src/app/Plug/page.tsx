@@ -242,138 +242,36 @@ export default function AboutPage() {
         <div className="flex items-center space-x-4 mb-8">
           <WordPullUp
             className="text-4xl font-bold tracking-[-0.02em] text-black dark:text-white md:text-4xl md:leading-[5rem]"
-            words="Our Qualities - "
-          />
-          <FlipWords
-            className="text-4xl font-bold tracking-[-0.02em] text-black dark:text-white md:text-4xl md:leading-[5rem]"
-            words={words}
+            words="Plug Valves - Coming Soon!"
           />
         </div>
 
-        {/* Card 1 */}
-        <div className="flex items-center space-x-4">
-          <WobbleCard className="bg-white dark:bg-background shadow-lg flex-1">
-            <CardHeader>
-              <CardTitle>Our Promise and Commitments</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="list-disc pl-5 text-lg">
-                <li>
-                  We pledge to fulfill customer requirements leveraging our
-                  extensive network, resources, and expertise.
-                </li>
-                <li>
-                  We commit to delivering superior products and services with
-                  unwavering integrity and wholehearted dedication.
-                </li>
-                <li>
-                  We vow to empower our suppliers and employees through
-                  continuous education to uphold the highest standards of
-                  quality demanded by our customers.
-                </li>
-                <li>
-                  We strive to innovate relentlessly, ensuring that every
-                  interaction reflects our commitment to excellence and customer
-                  satisfaction.
-                </li>
-                <li>
-                  We guarantee transparent communication and accountability in
-                  all our operations, fostering trust and lasting partnerships.
-                </li>
-              </ul>
-            </CardContent>
-          </WobbleCard>
-          <img
-            src="\reliable_image.jpg"
-            alt="Our Promise"
-            className="w-60 h-65 object-cover rounded" // Increased size
-          />
+        <div className="bg-orange-50 p-6 rounded-lg shadow-md">
+          <div className="flex items-center mb-4">
+            <img
+              src="\coming_soon.png"
+              alt="Coming Soon"
+              className="w-12 h-12 mr-4"
+            />
+            <h2 className="text-2xl font-bold text-orange-600">Plug Valves</h2>
+          </div>
+          <div className="space-y-4">
+            <p className="text-orange-800 italic">
+              We're thrilled to announce our innovative line of plug valves is
+              in the pipeline! These high-performance flow control solutions are
+              designed to revolutionize various industries.
+            </p>
+            <p className="text-orange-700">
+              Stay connected for exciting updates on
+            </p>
+            
+            <p className="text-orange-800 font-semibold mt-4">
+              Prepare to elevate your operations with our cutting-edge plug
+              valves!
+            </p>
+          </div>
         </div>
         <br></br>
-        {/* Card 2 */}
-        <div className="flex items-center space-x-4">
-          <WobbleCard className="bg-white dark:bg-background shadow-lg flex-1">
-            <CardHeader>
-              <CardTitle>Organizational Commitments</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="list-disc pl-5 text-lg">
-                <li>
-                  Commitment to Service: We are dedicated to providing
-                  exceptional service that exceeds our customers' expectations.
-                </li>
-                <li>
-                  Continuous Improvement: We embrace a culture of learning and
-                  continuous improvement to adapt and grow in a dynamic business
-                  environment.
-                </li>
-                <li>
-                  Community Engagement: We actively contribute to and support
-                  the communities in which we operate, fostering positive social
-                  impact.
-                </li>
-                <li>
-                  Transparency and Accountability: We operate with transparency
-                  and hold ourselves accountable to our stakeholders for our
-                  actions and decisions.
-                </li>
-                <li>
-                  Employee Empowerment: We empower our employees to innovate,
-                  collaborate, and take ownership, creating a fulfilling and
-                  supportive workplace.
-                </li>
-              </ul>
-            </CardContent>
-          </WobbleCard>
-          <img
-            src="\successful company icon.png"
-            alt="Quality Policy"
-            className="w-60 h-65 object-cover rounded" // Increased size
-          />
-        </div>
-        <br></br>
-        {/* Card 3 */}
-        <div className="flex items-center space-x-4">
-          <WobbleCard className="bg-white dark:bg-background shadow-lg flex-1">
-            <CardHeader>
-              <CardTitle>Core Values</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="list-disc pl-5 text-lg">
-                <li>
-                  Customer-Centric Excellence: We prioritize delivering
-                  exceptional value to our customers through innovation,
-                  quality, and reliable service.
-                </li>
-                <li>
-                  Operational Efficiency and Agility: We continuously optimize
-                  our processes and adapt quickly to changing market dynamics to
-                  enhance efficiency and maintain competitiveness.
-                </li>
-                <li>
-                  Environmental Sustainability: We are committed to minimizing
-                  our environmental footprint and promoting sustainable
-                  practices across all aspects of our operations.
-                </li>
-                <li>
-                  Employee Development and Well-being: We invest in our
-                  employees' growth, development, and well-being to foster a
-                  motivated and high-performing workforce.
-                </li>
-                <li>
-                  Ethical Governance and Compliance: We uphold the highest
-                  standards of ethical conduct and regulatory compliance in all
-                  our business practices.
-                </li>
-              </ul>
-            </CardContent>
-          </WobbleCard>
-          <img
-            src="\vision_image.jpg"
-            alt="Core Values"
-            className="w-60 h-65 object-cover rounded" // Increased size
-          />
-        </div>
         <br></br>
         {/* Footer */}
         <footer className="bg-orange-400 text-white py-12 px-6 md:px-12 lg:px-24">

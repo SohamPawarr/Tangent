@@ -131,7 +131,7 @@ export default function SMPValvesUI() {
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
-                    href="/Butterfly"
+                    href="/Gate"
                     className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Gate Valve
@@ -139,7 +139,7 @@ export default function SMPValvesUI() {
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
-                    href="/Butterfly"
+                    href="/Globe"
                     className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Globe Valve
@@ -147,7 +147,7 @@ export default function SMPValvesUI() {
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
-                    href="/Butterfly"
+                    href="/Check"
                     className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Check Valve
@@ -155,7 +155,7 @@ export default function SMPValvesUI() {
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
-                    href="/Butterfly"
+                    href="/Plug"
                     className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Plug Valve
@@ -180,7 +180,7 @@ export default function SMPValvesUI() {
               Clientele
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               href="/infrastructure"
               className="flex items-center hover:text-blue-200 transition-colors"
@@ -195,7 +195,7 @@ export default function SMPValvesUI() {
             >
               Career
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               href="/contact"
@@ -282,12 +282,13 @@ export default function SMPValvesUI() {
       </section>
 
       {/* Footer */}
+      {/* Footer */}
       <footer className="bg-orange-400 text-white py-12 px-6 md:px-12 lg:px-24">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">SMP Controls</h3>
             <p className="text-sm mb-4">
-              Leading manufacturer of high-quality industrial Valves for various
+              Leading manufacturer of high-quality industrial valves for various
               applications.
             </p>
             <div className="flex space-x-4">
@@ -315,27 +316,90 @@ export default function SMPValvesUI() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">
+                <a href="/" className="hover:text-orange-400 transition-colors">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">
+                <a
+                  href="/about"
+                  className="hover:text-orange-400 transition-colors"
+                >
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">
-                  Products
+                <a href="#" className="hover:text-[#E65100] transition-colors">
+                  <DropdownMenu>
+                    <DropdownMenuTrigger className="flex items-center hover:text-[#FFD180] transition-colors">
+                      Products <ChevronDown className="ml-1 h-4 w-4" />
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent>
+                      <DropdownMenuItem>
+                        <Link
+                          href="/butterfly"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
+                        >
+                          ButterFly Valve
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem>
+                        <Link
+                          href="/ball"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
+                        >
+                          Ball Valve
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem>
+                        <Link
+                          href="/Gate"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
+                        >
+                          Gate Valve
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem>
+                        <Link
+                          href="/Globe"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
+                        >
+                          Globe Valve
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem>
+                        <Link
+                          href="/Check"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
+                        >
+                          Check Valve
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem>
+                        <Link
+                          href="/Plug"
+                          className="flex items-center hover:text-[#FFD180] transition-colors"
+                        >
+                          Plug Valve
+                        </Link>
+                      </DropdownMenuItem>
+                    </DropdownMenuContent>
+                  </DropdownMenu>
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">
+                <a
+                  href="/quality"
+                  className="hover:text-[#E65100] transition-colors"
+                >
                   Quality
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">
+                <a
+                  href="/contact"
+                  className="hover:text-[#E65100] transition-colors"
+                >
                   Contact
                 </a>
               </li>

@@ -50,46 +50,108 @@ const navigationLinks = [
   "Contact",
 ];
 
-const words = [
-  "trustworthy",
-  "reliable",
-  "innovative",
-  "efficient",
-  "sustainable",
-  "advanced",
-  "precise",
-  "robust",
-  "durable",
-  "safe",
-  "professional",
-  "cutting-edge",
-  "exceptional",
-  "versatile",
-  "high-quality",
-  "better",
-  "cute",
-  "beautiful",
-  "modern",
-  "dependable",
-  "customer-focused",
-  "responsive",
-  "transparent",
-  "ethical",
-  "accountable",
-  "visionary",
-  "dynamic",
-  "progressive",
-  "adaptive",
-  "customer-centric",
-  "proactive",
-  "collaborative",
-  "empathetic",
-  "integrity-driven",
-  "agile",
-  "forward-thinking",
-];
+function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-export default function AboutPage() {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        alert("Failed to send message.");
+      }
+    } catch (error) {
+      alert("Failed to send message.");
+    }
+  };
+
+  return (
+    <section id="contact" className="py-16 bg-orange-100">
+      <div className="container mx-auto text-center">
+        <WordPullUp
+          className="text-4xl font-bold tracking-[-0.02em] text-black dark:text-white md:text-4xl md:leading-[5rem]"
+          words="Contact Us"
+        />
+        <p className="text-lg md:text-xl mb-8 text-orange-700">
+          Get in touch with us for more information about our products and
+          services.
+        </p>
+        <form onSubmit={handleSubmit}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <Label htmlFor="name" className="text-orange-800">
+                Name
+              </Label>
+              <Input
+                id="name"
+                type="text"
+                placeholder="Your Name"
+                className="mb-4 border border-orange-600"
+                value={formData.name}
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <Label htmlFor="email" className="text-orange-800">
+                Email
+              </Label>
+              <Input
+                id="email"
+                type="email"
+                placeholder="Your Email"
+                className="mb-4 border border-orange-600"
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="col-span-2">
+              <Label htmlFor="message" className="text-orange-800">
+                Message
+              </Label>
+              <Input
+                id="message"
+                type="text"
+                placeholder="Your Message"
+                className="mb-4 border border-orange-600"
+                value={formData.message}
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+          <div className="flex items-center justify-center">
+            <ShimmerButton type="submit" className="bg-orange-600 text-white">
+              Send Us
+            </ShimmerButton>
+          </div>
+        </form>
+      </div>
+    </section>
+  );
+}
+
+export default function ContactPage() {
   const [activeLink, setActiveLink] = useState<string>("Home");
   const [modalOpen, setModalOpen] = useState<boolean>(false);
 
@@ -236,145 +298,12 @@ export default function AboutPage() {
             </li>
           </ul>
         </nav>
+        <br></br>
+        {/* Contact Section */}
+        <Contact />
       </div>
 
       <div className="container mx-auto p-8">
-        <div className="flex items-center space-x-4 mb-8">
-          <WordPullUp
-            className="text-4xl font-bold tracking-[-0.02em] text-black dark:text-white md:text-4xl md:leading-[5rem]"
-            words="Our Qualities - "
-          />
-          <FlipWords
-            className="text-4xl font-bold tracking-[-0.02em] text-black dark:text-white md:text-4xl md:leading-[5rem]"
-            words={words}
-          />
-        </div>
-
-        {/* Card 1 */}
-        <div className="flex items-center space-x-4">
-          <WobbleCard className="bg-white dark:bg-background shadow-lg flex-1">
-            <CardHeader>
-              <CardTitle>Our Promise and Commitments</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="list-disc pl-5 text-lg">
-                <li>
-                  We pledge to fulfill customer requirements leveraging our
-                  extensive network, resources, and expertise.
-                </li>
-                <li>
-                  We commit to delivering superior products and services with
-                  unwavering integrity and wholehearted dedication.
-                </li>
-                <li>
-                  We vow to empower our suppliers and employees through
-                  continuous education to uphold the highest standards of
-                  quality demanded by our customers.
-                </li>
-                <li>
-                  We strive to innovate relentlessly, ensuring that every
-                  interaction reflects our commitment to excellence and customer
-                  satisfaction.
-                </li>
-                <li>
-                  We guarantee transparent communication and accountability in
-                  all our operations, fostering trust and lasting partnerships.
-                </li>
-              </ul>
-            </CardContent>
-          </WobbleCard>
-          <img
-            src="\reliable_image.jpg"
-            alt="Our Promise"
-            className="w-60 h-65 object-cover rounded" // Increased size
-          />
-        </div>
-        <br></br>
-        {/* Card 2 */}
-        <div className="flex items-center space-x-4">
-          <WobbleCard className="bg-white dark:bg-background shadow-lg flex-1">
-            <CardHeader>
-              <CardTitle>Organizational Commitments</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="list-disc pl-5 text-lg">
-                <li>
-                  Commitment to Service: We are dedicated to providing
-                  exceptional service that exceeds our customers' expectations.
-                </li>
-                <li>
-                  Continuous Improvement: We embrace a culture of learning and
-                  continuous improvement to adapt and grow in a dynamic business
-                  environment.
-                </li>
-                <li>
-                  Community Engagement: We actively contribute to and support
-                  the communities in which we operate, fostering positive social
-                  impact.
-                </li>
-                <li>
-                  Transparency and Accountability: We operate with transparency
-                  and hold ourselves accountable to our stakeholders for our
-                  actions and decisions.
-                </li>
-                <li>
-                  Employee Empowerment: We empower our employees to innovate,
-                  collaborate, and take ownership, creating a fulfilling and
-                  supportive workplace.
-                </li>
-              </ul>
-            </CardContent>
-          </WobbleCard>
-          <img
-            src="\successful company icon.png"
-            alt="Quality Policy"
-            className="w-60 h-65 object-cover rounded" // Increased size
-          />
-        </div>
-        <br></br>
-        {/* Card 3 */}
-        <div className="flex items-center space-x-4">
-          <WobbleCard className="bg-white dark:bg-background shadow-lg flex-1">
-            <CardHeader>
-              <CardTitle>Core Values</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="list-disc pl-5 text-lg">
-                <li>
-                  Customer-Centric Excellence: We prioritize delivering
-                  exceptional value to our customers through innovation,
-                  quality, and reliable service.
-                </li>
-                <li>
-                  Operational Efficiency and Agility: We continuously optimize
-                  our processes and adapt quickly to changing market dynamics to
-                  enhance efficiency and maintain competitiveness.
-                </li>
-                <li>
-                  Environmental Sustainability: We are committed to minimizing
-                  our environmental footprint and promoting sustainable
-                  practices across all aspects of our operations.
-                </li>
-                <li>
-                  Employee Development and Well-being: We invest in our
-                  employees' growth, development, and well-being to foster a
-                  motivated and high-performing workforce.
-                </li>
-                <li>
-                  Ethical Governance and Compliance: We uphold the highest
-                  standards of ethical conduct and regulatory compliance in all
-                  our business practices.
-                </li>
-              </ul>
-            </CardContent>
-          </WobbleCard>
-          <img
-            src="\vision_image.jpg"
-            alt="Core Values"
-            className="w-60 h-65 object-cover rounded" // Increased size
-          />
-        </div>
-        <br></br>
         {/* Footer */}
         <footer className="bg-orange-400 text-white py-12 px-6 md:px-12 lg:px-24">
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -546,3 +475,4 @@ export default function AboutPage() {
     </>
   );
 }
+
