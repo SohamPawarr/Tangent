@@ -55,6 +55,8 @@ const productCategories = [
   { name: "Check Valve" },
   { name: "Plug Valve" },
 ];
+const spanValue3: string = "3";
+const spanValue2: string = "2";
 
 export default function SMPValvesUI() {
   const [activeLink, setActiveLink] = useState("Home");
@@ -115,7 +117,7 @@ export default function SMPValvesUI() {
               <DropdownMenuContent>
                 <DropdownMenuItem>
                   <Link
-                    href="/Butterfly"
+                    href="/butterfly"
                     className="flex items-center hover:text-blue-200 transition-colors"
                   >
                     Butterfly Valve
@@ -250,25 +252,25 @@ export default function SMPValvesUI() {
           <table className="w-full border-collapse text-sm">
             <thead>
               <tr className="bg-orange-800 text-white">
-                <th colSpan="2" className="border p-2">
+                <th colSpan={Number(spanValue2)} className="border p-2">
                   VALVE SIZE
                 </th>
-                <th colSpan="2" className="border p-2">
+                <th colSpan={Number(spanValue2)} className="border p-2">
                   ØB
                 </th>
                 <th className="border p-2">C</th>
-                <th colSpan="2" className="border p-2">
+                <th colSpan={Number(spanValue2)} className="border p-2">
                   D
                 </th>
-                <th colSpan="2" className="border p-2">
+                <th colSpan={Number(spanValue2)} className="border p-2">
                   E
                 </th>
                 <th className="border p-2">F</th>
                 <th className="border p-2">K</th>
-                <th colSpan="2" className="border p-2">
+                <th colSpan={Number(spanValue2)} className="border p-2">
                   STEM CONNECTION
                 </th>
-                <th colSpan="3" className="border p-2">
+                <th colSpan={Number(spanValue3)} className="border p-2">
                   TOP FLANGE
                 </th>
               </tr>

@@ -25,7 +25,8 @@ import { Input } from "@/components/ui/input";
 import ShimmerButton from "@/components/magicui/shimmer-button";
 import Link from "next/link";
 import { WobbleCard } from "@/components/ui/wobble-card";
-
+const spanValue5: string = "5";
+const spanValue10: string = "10";
 const navigationLinks = [
   "Home",
   "About Us",
@@ -389,7 +390,7 @@ export default function SMPValvesUI() {
             </thead>
             <tbody>
               <tr className="bg-orange-700 text-white">
-                <td className="border p-2" colSpan="10">
+                <td className="border p-2" colSpan={Number(spanValue10)}>
                   EN 593
                 </td>
               </tr>
@@ -418,7 +419,7 @@ export default function SMPValvesUI() {
                 </tr>
               ))}
               <tr className="bg-orange-700 text-white">
-                <td className="border p-2" colSpan="10">
+                <td className="border p-2" colSpan={Number(spanValue10)}>
                   AWWA C504
                 </td>
               </tr>
@@ -463,7 +464,7 @@ export default function SMPValvesUI() {
             </thead>
             <tbody>
               <tr className="bg-orange-700 text-white">
-                <td className="border p-2" colSpan="5">
+                <td className="border p-2" colSpan={Number(spanValue5)}>
                   EN 593
                 </td>
               </tr>
@@ -492,7 +493,7 @@ export default function SMPValvesUI() {
                 </tr>
               ))}
               <tr className="bg-orange-700 text-white">
-                <td className="border p-2" colSpan="5">
+                <td className="border p-2" colSpan={Number(spanValue5)}>
                   AWWA C504
                 </td>
               </tr>

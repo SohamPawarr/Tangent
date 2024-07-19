@@ -46,6 +46,9 @@ const navigationLinks = [
   "Career",
   "Contact",
 ];
+const spanValue2: string = "2";
+const spanValue3: string = "3";
+const spanValue8: string = "8";
 
 const productCategories = [
   { name: "Butterfly Valve" },
@@ -395,7 +398,7 @@ export default function SMPValvesUI() {
                 <th className="border p-2">SHAFT DIA</th>
                 <th
                   className="border p-2"
-                  colSpan="8"
+                  colSpan={Number(spanValue8)}
                   style={{ textAlign: "center" }}
                 >
                   DIMENSIONS - WAFER & LUGGED
@@ -403,12 +406,12 @@ export default function SMPValvesUI() {
                 <th className="border p-2">LUGGED</th>
                 <th
                   className="border p-2"
-                  colSpan="3"
+                  colSpan={Number(spanValue3)}
                   style={{ textAlign: "center" }}
                 >
                   MOUNTAIN FLANGE
                 </th>
-                <th className="border p-2" colSpan="2">
+                <th className="border p-2" colSpan={Number(spanValue2)}>
                   APPX. WEIGHT IN KGS.
                 </th>
               </tr>
