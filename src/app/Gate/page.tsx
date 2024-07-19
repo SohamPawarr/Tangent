@@ -260,22 +260,22 @@ export default function SMPValvesUI() {
           <br></br>
         </div>
         <br></br>
-        <h2 className="text-2xl font-bold mb-6 text-orange-800">Images</h2>
+        <h2 className="text-2xl font-bold mb-6 text-orange-800">imgs</h2>
         <br></br>
         <div className="flex justify-between space-x-4">
           <img
             src="\Gate valve\flanged\Model K71.jpg"
-            alt="Description for image 1"
+            alt="Description for img 1"
             className="w-1/3 object-cover rounded"
           />
           <img
             src="\Gate valve\screw\Model K72, screw end gate valve.jpg"
-            alt="Description for image 2"
+            alt="Description for img 2"
             className="w-1/3 object-cover rounded"
           />
           <img
             src="\Gate valve\socket\Model K73, socket weld gate valve.jpg"
-            alt="Description for image 3"
+            alt="Description for img 3"
             className="w-1/3 object-cover rounded"
           />
         </div>

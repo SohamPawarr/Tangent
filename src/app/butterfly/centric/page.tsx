@@ -219,12 +219,12 @@ export default function SMPValvesUI() {
             <div className="flex justify-center space-x-4 mt-4">
               <img
                 src="\Butterfly valve\centric\k31.jpg"
-                alt="Description for image 1"
+                alt="Description for img 1"
                 className="w-1/3 object-cover rounded"
               />
               <img
                 src="\Butterfly valve\centric\k_31_32.png"
-                alt="Description for image 2"
+                alt="Description for img 2"
                 className="w-1/3 object-cover rounded"
               />
             </div>
@@ -241,12 +241,12 @@ export default function SMPValvesUI() {
             <div className="flex justify-center items-center space-x-4 mt-4">
               <img
                 src="\Butterfly valve\centric\k39_new.png"
-                alt="Description for image 1"
+                alt="Description for img 1"
                 className="w-1/3 object-cover rounded"
               />
               <img
                 src="\Butterfly valve\centric\Model K39.png"
-                alt="Description for image 2"
+                alt="Description for img 2"
                 className="w-1/4 object-cover rounded"
               />
             </div>

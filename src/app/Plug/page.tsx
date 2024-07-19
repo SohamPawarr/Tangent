@@ -257,7 +257,7 @@ export default function AboutPage() {
           </div>
           <div className="space-y-4">
             <p className="text-orange-800 italic">
-              We're thrilled to announce our innovative line of plug valves is
+              We are thrilled to announce our innovative line of plug valves is
               in the pipeline! These high-performance flow control solutions are
               designed to revolutionize various industries.
             </p>

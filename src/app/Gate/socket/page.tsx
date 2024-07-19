@@ -218,7 +218,7 @@ export default function SMPValvesUI() {
               className="w-50 h-auto object-cover rounded"
             />
             <div className="mx-8"></div>{" "}
-            {/* Spacer to create distance between images */}
+            {/* Spacer to create distance between imgs */}
             <img
               src="\Gate valve\socket\Model K73, socket weld gate valve.jpg"
               alt="Actual gate valve photo"

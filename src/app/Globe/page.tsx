@@ -249,17 +249,17 @@ export default function SMPValvesUI() {
           </div>
         </div>
         <br></br>
-        <h2 className="text-2xl font-bold mb-6 text-orange-800">Images</h2>
+        <h2 className="text-2xl font-bold mb-6 text-orange-800">imgs</h2>
         <br></br>
         <div className="flex justify-between space-x-4">
           <img
             src="\Globe valve\flanged\Model K77, flange end globe-valve.png"
-            alt="Description for image 1"
+            alt="Description for img 1"
             className="w-1/3 object-cover rounded"
           />
           <img
             src="\Globe valve\screw\Model K76, screw end globe valve.jpg"
-            alt="Description for image 2"
+            alt="Description for img 2"
             className="w-1/3 object-cover rounded"
           />
         </div>

@@ -12,7 +12,7 @@ export const HoverEffect = ({
   items: {
     title: string;
     description: string;
-    image: string;
+    img: string;
     link: string;
   }[];
   className?: string;
@@ -56,8 +56,8 @@ export const HoverEffect = ({
               <CardTitle>{item.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              {item.image && (
-                <img src={item.image} alt={item.title} className="w-full h-full object-cover rounded" />
+              {item.img && (
+                <img src={item.img} alt={item.title} className="w-full h-full object-cover rounded" />
               )}
               <CardDescription>{item.description}</CardDescription>
               <Button className="mt-4 w-full">Learn More</Button>

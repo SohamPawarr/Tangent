@@ -256,17 +256,17 @@ export default function SMPValvesUI() {
           </div>
         </div>
         <br></br>
-        <h2 className="text-2xl font-bold mb-6 text-orange-800">Images</h2>
+        <h2 className="text-2xl font-bold mb-6 text-orange-800">imgs</h2>
         <br></br>
         <div className="flex justify-between space-x-4">
           <img
             src="\Check valve\flanged\Model K41, flange end check valve.jpg"
-            alt="Description for image 1"
+            alt="Description for img 1"
             className="w-1/4 object-cover rounded"
           />
           <img
             src="\Check valve\screw\Model K42, screw end check valve.jpg"
-            alt="Description for image 2"
+            alt="Description for img 2"
             className="w-1/4 object-cover rounded"
           />
         </div>

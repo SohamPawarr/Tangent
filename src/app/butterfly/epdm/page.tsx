@@ -213,12 +213,12 @@ export default function SMPValvesUI() {
         <div className="flex items-center justify-center ml-4">
           <img
             src="\Butterfly valve\epdm\Model K61 (2).jpg"
-            alt="Description for image 1"
+            alt="Description for img 1"
             className="w-50 h-auto object-cover rounded mr-4"
           />
           <img
             src="\Butterfly valve\epdm\Model K61.jpg"
-            alt="Description for image 2"
+            alt="Description for img 2"
             className="w-40 h-auto object-cover rounded"
           />
         </div>
@@ -244,7 +244,7 @@ export default function SMPValvesUI() {
           <div className="ml-4">
             <img
               src="\Butterfly valve\pfa\Model K51.png"
-              alt="Description for image 1"
+              alt="Description for img 1"
               className="w-40 h-auto object-cover rounded"
             />
           </div>
@@ -385,7 +385,7 @@ export default function SMPValvesUI() {
             </p>
             <img
               src="\Butterfly valve\pfa\k51.jpg"
-              alt="Description for image 2"
+              alt="Description for img 2"
               className=" object-cover rounded"
             />
           </div>
@@ -395,7 +395,7 @@ export default function SMPValvesUI() {
             </p>
             <img
               src="\Butterfly valve\pfa\k52.jpg"
-              alt="Description for image 2"
+              alt="Description for img 2"
               className=" object-cover rounded"
             />
           </div>
@@ -405,7 +405,7 @@ export default function SMPValvesUI() {
             </p>
             <img
               src="\Butterfly valve\pfa\k53.jpg"
-              alt="Description for image 2"
+              alt="Description for img 2"
               className=" object-cover rounded"
             />
           </div>

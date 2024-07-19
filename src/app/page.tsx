@@ -269,7 +269,7 @@ export default function SMPValvesUI() {
         {/* Hero Banner */}
         <div className="relative rounded-lg overflow-hidden mb-16">
           <img
-            src="/hero-image-placeholder.jpg"
+            src="/hero-img-placeholder.jpg"
             alt="Industrial Valves"
             className="w-full h-[500px]"
           />
@@ -303,7 +303,7 @@ export default function SMPValvesUI() {
                 <CardContent className="flex flex-col items-center">
                   {" "}
                   {/* Centering content */}
-                  {/* Placeholder images */}
+                  {/* Placeholder imgs */}
                   {category.name === "Butterfly Valve" && (
                     <img
                       src="Butterfly valve/butterfly_valve.jpg"

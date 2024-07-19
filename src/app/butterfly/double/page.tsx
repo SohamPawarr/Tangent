@@ -233,7 +233,7 @@ export default function SMPValvesUI() {
           <div className="ml-4">
             <img
               src="\Butterfly valve\double\KHPbanner.png"
-              alt="Description for image 1"
+              alt="Description for img 1"
               className="w-40 h-auto object-cover rounded"
             />
           </div>
@@ -407,7 +407,7 @@ export default function SMPValvesUI() {
             </p>
             <img
               src="\Butterfly valve\double\KHP-w.png"
-              alt="Description for image 2"
+              alt="Description for img 2"
               className=" object-cover rounded"
             />
           </div>
@@ -417,7 +417,7 @@ export default function SMPValvesUI() {
             </p>
             <img
               src="\Butterfly valve\double\KHP_l.png"
-              alt="Description for image 2"
+              alt="Description for img 2"
               className=" object-cover rounded"
             />
           </div>
@@ -427,7 +427,7 @@ export default function SMPValvesUI() {
             </p>
             <img
               src="\Butterfly valve\double\KHP-f.png"
-              alt="Description for image 2"
+              alt="Description for img 2"
               className=" object-cover rounded"
             />
           </div>

@@ -257,7 +257,7 @@ export default function AboutPage() {
             </CardContent>
           </WobbleCard>
           <img
-            src="/trust_image.png"
+            src="/trust_img.png"
             alt="Our Promise"
             className="w-60 h-65 object-cover rounded" // Increased size
           />

@@ -284,7 +284,7 @@ export default function AboutPage() {
             </CardContent>
           </WobbleCard>
           <img
-            src="\reliable_image.jpg"
+            src="\reliable_img.jpg"
             alt="Our Promise"
             className="w-60 h-65 object-cover rounded" // Increased size
           />
@@ -369,7 +369,7 @@ export default function AboutPage() {
             </CardContent>
           </WobbleCard>
           <img
-            src="\vision_image.jpg"
+            src="\vision_img.jpg"
             alt="Core Values"
             className="w-60 h-65 object-cover rounded" // Increased size
           />

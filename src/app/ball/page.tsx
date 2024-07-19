@@ -46,7 +46,7 @@ const navigationLinks = [
   "Career",
   "Contact",
 ];
-
+const spanValue: string = "2";
 const productCategories = [
   { name: "Butterfly Valve" },
   { name: "Ball Valve" },
@@ -340,7 +340,7 @@ export default function SMPValvesUI() {
             </thead>
             <tbody>
               <tr>
-                <td className="border p-2" rowSpan="2">
+                <td className="border p-2" rowSpan={Number(spanValue)}>
                   Single Piece
                 </td>
                 <td className="border p-2">Flanged</td>
@@ -361,7 +361,7 @@ export default function SMPValvesUI() {
                 <td className="border p-2">✓</td>
               </tr>
               <tr>
-                <td className="border p-2" rowSpan="2">
+                <td className="border p-2" rowSpan={Number(spanValue)}>
                   Two Piece
                 </td>
                 <td className="border p-2">Flanged</td>
@@ -382,7 +382,7 @@ export default function SMPValvesUI() {
                 <td className="border p-2">✓</td>
               </tr>
               <tr>
-                <td className="border p-2" rowSpan="2">
+                <td className="border p-2" rowSpan={Number(spanValue)}>
                   Three Piece
                 </td>
                 <td className="border p-2">Flanged</td>
