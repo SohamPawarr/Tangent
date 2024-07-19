@@ -51,101 +51,56 @@ const navigationLinks = [
 ];
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { id, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [id]: value,
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        alert("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        alert("Failed to send message.");
-      }
-    } catch (error) {
-      alert("Failed to send message.");
-    }
-  };
-
   return (
     <section id="contact" className="py-16 bg-orange-100">
       <div className="container mx-auto text-center">
-        <WordPullUp
-          className="text-4xl font-bold tracking-[-0.02em] text-black dark:text-white md:text-4xl md:leading-[5rem]"
-          words="Contact Us"
-        />
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-orange-800">
+          Contact Us
+        </h2>
         <p className="text-lg md:text-xl mb-8 text-orange-700">
           Get in touch with us for more information about our products and
           services.
         </p>
-        <form onSubmit={handleSubmit}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <Label htmlFor="name" className="text-orange-800">
-                Name
-              </Label>
-              <Input
-                id="name"
-                type="text"
-                placeholder="Your Name"
-                className="mb-4 border border-orange-600"
-                value={formData.name}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <Label htmlFor="email" className="text-orange-800">
-                Email
-              </Label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="Your Email"
-                className="mb-4 border border-orange-600"
-                value={formData.email}
-                onChange={handleChange}
-              />
-            </div>
-            <div className="col-span-2">
-              <Label htmlFor="message" className="text-orange-800">
-                Message
-              </Label>
-              <Input
-                id="message"
-                type="text"
-                placeholder="Your Message"
-                className="mb-4 border border-orange-600"
-                value={formData.message}
-                onChange={handleChange}
-              />
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <Label htmlFor="name" className="text-orange-800">
+              Name
+            </Label>
+            <Input
+              id="name"
+              type="text"
+              placeholder="Your Name"
+              className="mb-4 border border-orange-600"
+            />
           </div>
-          <div className="flex items-center justify-center">
-            <ShimmerButton type="submit" className="bg-orange-600 text-white">
-              Send Us
-            </ShimmerButton>
+          <div>
+            <Label htmlFor="email" className="text-orange-800">
+              Email
+            </Label>
+            <Input
+              id="email"
+              type="email"
+              placeholder="Your Email"
+              className="mb-4 border border-orange-600"
+            />
           </div>
-        </form>
+          <div className="col-span-2">
+            <Label htmlFor="message" className="text-orange-800">
+              Message
+            </Label>
+            <Input
+              id="message"
+              type="text"
+              placeholder="Your Message"
+              className="mb-4 border border-orange-600"
+            />
+          </div>
+        </div>
+        <div className="flex items-center justify-center">
+          <ShimmerButton className="bg-orange-600 text-white">
+            Send Us
+          </ShimmerButton>
+        </div>
       </div>
     </section>
   );
@@ -475,4 +430,3 @@ export default function ContactPage() {
     </>
   );
 }
-
