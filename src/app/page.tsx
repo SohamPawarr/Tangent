@@ -269,7 +269,7 @@ export default function SMPValvesUI() {
         {/* Hero Banner */}
         <div className="relative rounded-lg overflow-hidden mb-16">
           <img
-            src="/hero-img-placeholder.jpg"
+            src="\hero-image-placeholder.jpg"
             alt="Industrial Valves"
             className="w-full h-[500px]"
           />
