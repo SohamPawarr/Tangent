@@ -100,7 +100,7 @@ export default function AboutPage() {
         <header className="bg-gray-100 py-3 px-6 md:px-12 lg:px-24 flex items-center justify-between">
           <div className="flex items-center">
             <img
-              src="/pawarlogo.svg"
+              src="/pawarlogo.png"
               alt="Tangent Valves Logo"
               className="h-10 mr-2"
             />

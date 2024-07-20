@@ -88,6 +88,51 @@ const words = [
   "agile",
   "forward-thinking",
 ];
+const clients = [
+  "Parle", "CJ International", "Delhi Flour Mills", "Simplicity", "Sia Fluid",
+  "Dhatukarm", "Indotherm", "Global Engineers", "Sam Gas", "Lakhani",
+  "Aditya Dispomed", "Otsuka Chemical", "Taikisha Engg.", "Nitin Lifesciences",
+  "Kennametal India Ltd.", "Autometer", "Amba Tech", "Partap Spintex",
+  "Ready Roti India", "Fortune Engineers", "Eveready Industries",
+  "Kusalava International", "Kuwer Industries Ltd.", "Maruti", "VVF",
+  "Mas Equipment", "Patanjali", "Crescent", "A.S. Mechanical", "JTEKT INDIA LTD."
+];
+
+const ClientGrid: React.FC = () => {
+  const getImagePath = (clientName: string): string => {
+    const formattedName = clientName.toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[&.]/g, '')
+      .replace(/ltd/g, 'ltd');
+    return `/Client logos/${formattedName}.png`;
+  };
+
+  const handleImageError = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    const img = event.currentTarget;
+    img.onerror = null;
+    img.src = "\placeholder-logo.png";
+  };
+
+  return (
+    <div className="container mx-auto px-4 py-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        {clients.map((client, index) => (
+          <WobbleCard key={index} className="overflow-hidden bg-orange-200">
+            <CardContent className="p-4">
+              <img
+                src={getImagePath(client)}
+                alt={`${client} logo`}
+                className="w-full h-24 object-contain mb-2"
+                onError={handleImageError}
+              />
+              <p className="text-center font-semibold">{client}</p>
+            </CardContent>
+          </WobbleCard>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default function AboutPage() {
   const [activeLink, setActiveLink] = useState<string>("Home");
@@ -100,7 +145,7 @@ export default function AboutPage() {
         <header className="bg-gray-100 py-3 px-6 md:px-12 lg:px-24 flex items-center justify-between">
           <div className="flex items-center">
             <img
-              src="/pawarlogo.svg"
+              src="/pawarlogo.png"
               alt="Tangent Valves Logo"
               className="h-10 mr-2"
             />
@@ -245,7 +290,7 @@ export default function AboutPage() {
             words="Our Clients "
           />
         </div>
-
+        <ClientGrid />
         
         {/* Footer */}
         <footer className="bg-orange-400 text-white py-12 px-6 md:px-12 lg:px-24">
