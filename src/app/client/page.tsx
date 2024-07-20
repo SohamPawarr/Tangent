@@ -104,7 +104,7 @@ const ClientGrid: React.FC = () => {
       .replace(/\s+/g, '-')
       .replace(/[&.]/g, '')
       .replace(/ltd/g, 'ltd');
-    return `/Client logos/${formattedName}.png`;
+    return `/${formattedName}.png`;
   };
 
   const handleImageError = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {
