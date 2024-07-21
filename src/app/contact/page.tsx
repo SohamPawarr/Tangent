@@ -51,56 +51,77 @@ const navigationLinks = [
 ];
 
 function Contact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [status, setStatus] = useState('');
+
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    setStatus('Sending...');
+    const res = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ name, email, message }),
+    });
+  
+    const result = await res.json();
+    if (res.ok) {
+      setStatus('Email sent successfully!');
+    } else {
+      setStatus('Failed to send email.');
+    }
+  };
+  
+
   return (
     <section id="contact" className="py-16 bg-orange-100">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-orange-800">
-          Contact Us
-        </h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-orange-800">Contact Us</h2>
         <p className="text-lg md:text-xl mb-8 text-orange-700">
-          Get in touch with us for more information about our products and
-          services.
+          Get in touch with us for more information about our products and services.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <Label htmlFor="name" className="text-orange-800">
-              Name
-            </Label>
+            <Label htmlFor="name" className="text-orange-800">Name</Label>
             <Input
               id="name"
               type="text"
               placeholder="Your Name"
               className="mb-4 border border-orange-600"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div>
-            <Label htmlFor="email" className="text-orange-800">
-              Email
-            </Label>
+            <Label htmlFor="email" className="text-orange-800">Email</Label>
             <Input
               id="email"
               type="email"
               placeholder="Your Email"
               className="mb-4 border border-orange-600"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="col-span-2">
-            <Label htmlFor="message" className="text-orange-800">
-              Message
-            </Label>
+            <Label htmlFor="message" className="text-orange-800">Message</Label>
             <Input
               id="message"
               type="text"
               placeholder="Your Message"
               className="mb-4 border border-orange-600"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             />
           </div>
-        </div>
-        <div className="flex items-center justify-center">
-          <ShimmerButton className="bg-orange-600 text-white">
-            Send Us
-          </ShimmerButton>
-        </div>
+          <div className="col-span-2 flex items-center justify-center">
+            <Button type="submit" className="bg-orange-600 text-white">Send Us</Button>
+          </div>
+        </form>
+        {status && <p className="text-lg md:text-xl mt-4 text-orange-700">{status}</p>}
       </div>
     </section>
   );
