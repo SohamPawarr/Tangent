@@ -66,7 +66,7 @@ function Contact() {
       },
       body: JSON.stringify({ name, email, message }),
     });
-  
+
     const result = await res.json();
     if (res.ok) {
       setStatus('Email sent successfully!');
@@ -74,12 +74,13 @@ function Contact() {
       setStatus('Failed to send email.');
     }
   };
-  
 
   return (
     <section id="contact" className="py-16 bg-orange-100">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-orange-800">Contact Us</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-orange-800">
+          Contact Us
+        </h2>
         <p className="text-lg md:text-xl mb-8 text-orange-700">
           Get in touch with us for more information about our products and services.
         </p>
@@ -89,10 +90,10 @@ function Contact() {
             <Input
               id="name"
               type="text"
-              placeholder="Your Name"
-              className="mb-4 border border-orange-600"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              placeholder="Your Name"
+              className="mb-4 border border-orange-600"
             />
           </div>
           <div>
@@ -100,10 +101,10 @@ function Contact() {
             <Input
               id="email"
               type="email"
-              placeholder="Your Email"
-              className="mb-4 border border-orange-600"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              placeholder="Your Email"
+              className="mb-4 border border-orange-600"
             />
           </div>
           <div className="col-span-2">
@@ -111,17 +112,19 @@ function Contact() {
             <Input
               id="message"
               type="text"
-              placeholder="Your Message"
-              className="mb-4 border border-orange-600"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              placeholder="Your Message"
+              className="mb-4 border border-orange-600"
             />
           </div>
           <div className="col-span-2 flex items-center justify-center">
-            <Button type="submit" className="bg-orange-600 text-white">Send Us</Button>
+            <ShimmerButton type="submit" className="bg-orange-600 text-white">
+              Send Us
+            </ShimmerButton>
           </div>
         </form>
-        {status && <p className="text-lg md:text-xl mt-4 text-orange-700">{status}</p>}
+        {status && <p className="mt-4 text-orange-700">{status}</p>}
       </div>
     </section>
   );
@@ -151,7 +154,7 @@ export default function ContactPage() {
             </div>
             <div className="flex items-center">
               <Mail className="h-4 w-4 mr-2 text-orange-500" />
-              <span className="text-sm">sales@smpcontrol.com</span>
+              <span className="text-sm">scspl.smp@gmail com</span>
             </div>
           </div>
         </header>

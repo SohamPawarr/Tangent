@@ -86,7 +86,7 @@ export default function SMPValvesUI() {
           </div>
           <div className="flex items-center">
             <Mail className="h-4 w-4 mr-2 text-orange-500" />
-            <span className="text-sm">sales@smpcontrol.com</span>
+            <span className="text-sm">scspl.smp@gmail com</span>
           </div>
         </div>
       </header>
