@@ -80,7 +80,7 @@ export default function SMPValvesUI() {
         <div className="flex items-center space-x-6">
           <div className="flex items-center">
             <Phone className="h-4 w-4 mr-2 text-orange-500" />
-            <span className="text-sm">+91</span>
+            <span className="text-sm">  </span>
           </div>
           <div className="flex items-center">
             <Mail className="h-4 w-4 mr-2 text-orange-500" />
@@ -897,11 +897,11 @@ export default function SMPValvesUI() {
             <address className="not-italic">
               <p className="flex items-center mb-2">
                 <MapPin className="h-5 w-5 mr-2" />
-                123 Industrial Area, Mumbai, India
+                   
               </p>
               <p className="flex items-center mb-2">
                 <Phone className="h-5 w-5 mr-2" />
-                +91-22-25826629
+                 
               </p>
               <p className="flex items-center">
                 <Mail className="h-5 w-5 mr-2" />
