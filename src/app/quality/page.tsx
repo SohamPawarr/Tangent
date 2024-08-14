@@ -104,7 +104,7 @@ export default function AboutPage() {
               alt="Tangent Valves Logo"
               className="h-10 mr-2"
             />
-            <h1 className="text-black text-3xl font-bold">Tangent</h1>
+               <h1 className="text-black text-3xl font-bold">SMP Controls Systems Private Limited</h1>
           </div>
           <div className="flex items-center space-x-6">
             <div className="flex items-center">

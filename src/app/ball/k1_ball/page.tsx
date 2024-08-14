@@ -75,7 +75,7 @@ export default function SMPValvesUI() {
             alt="Tangent Valves Logo"
             className="h-10 mr-2"
           />
-          <h1 className="text-black text-3xl font-bold">Tangent</h1>
+             <h1 className="text-black text-3xl font-bold">SMP Controls Systems Private Limited</h1>
         </div>
         <div className="flex items-center space-x-6">
           <div className="flex items-center">
@@ -623,14 +623,14 @@ export default function SMPValvesUI() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <address className="not-italic">
-              <p className="flex items-center mb-2">
+              {/* <p className="flex items-center mb-2">
                 <MapPin className="h-5 w-5 mr-2" />
                    
               </p>
               <p className="flex items-center mb-2">
                 <Phone className="h-5 w-5 mr-2" />
                  
-              </p>
+              </p> */}
               <p className="flex items-center">
                 <Mail className="h-5 w-5 mr-2" />
                 sales@smpcontrols.com
