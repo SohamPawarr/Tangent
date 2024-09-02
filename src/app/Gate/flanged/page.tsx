@@ -576,7 +576,7 @@ export default function SMPValvesUI() {
                 <Twitter className="h-6 w-6" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/smp-control-systems-private-limited/"
                 className="text-white hover:text-orange-400 transition-colors"
               >
                 <Linkedin className="h-6 w-6" />

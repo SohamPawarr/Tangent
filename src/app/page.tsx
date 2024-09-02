@@ -26,6 +26,7 @@ import ShimmerButton from "@/components/magicui/shimmer-button";
 import Link from "next/link";
 import { WobbleCard } from "@/components/ui/wobble-card";
 import GradualSpacing from "@/components/magicui/gradual-spacing";
+import { Textarea } from "@/components/ui/textarea";
 
 const navigationLinks = [
   "Home",
@@ -58,59 +59,48 @@ const productCategories = [
 ];
 
 function Contact() {
+  const handleSendEmail = () => {
+    const name = (document.getElementById('name') as HTMLInputElement).value;
+    const email = (document.getElementById('email') as HTMLInputElement).value;
+    const message = (document.getElementById('message') as HTMLTextAreaElement).value;
+
+    const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=scspl.smp@gmail.com.com&su=Contact%20Us&body=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    )}&tf=1`;
+
+    window.location.href = mailtoLink;
+  };
+
   return (
-    <section id="contact" className="py-16 bg-orange-100">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-orange-800">
-          Contact Us
-        </h2>
-        <p className="text-lg md:text-xl mb-8 text-orange-700">
-          Get in touch with us for more information about our products and
-          services.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <Label htmlFor="name" className="text-orange-800">
-              Name
-            </Label>
-            <Input
-              id="name"
-              type="text"
-              placeholder="Your Name"
-              className="mb-4 border border-orange-600"
-            />
-          </div>
-          <div>
-            <Label htmlFor="email" className="text-orange-800">
-              Email
-            </Label>
-            <Input
-              id="email"
-              type="email"
-              placeholder="Your Email"
-              className="mb-4 border border-orange-600"
-            />
-          </div>
-          <div className="col-span-2">
-            <Label htmlFor="message" className="text-orange-800">
-              Message
-            </Label>
-            <Input
-              id="message"
-              type="text"
-              placeholder="Your Message"
-              className="mb-4 border border-orange-600"
-            />
-          </div>
-        </div>
-        <div className="flex items-center justify-center">
-          <ShimmerButton className="bg-orange-600 text-white">
-            Send Us
-          </ShimmerButton>
-        </div>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#f9e8d6]">
+      <div className="text-center">
+        <h2 className="text-3xl font-bold text-[#8b3e2f]">Contact Us</h2>
+        <p className="text-[#8b3e2f]">Get in touch with us for more information about our products and services.</p>
       </div>
-    </section>
-  );
+      <div className="w-full max-w-3xl mt-8 space-y-4">
+        <div className="grid grid-cols-2 gap-4">
+          <div className="space-y-2">
+            <Label htmlFor="name">Name</Label>
+            <Input id="name" placeholder="Your Name" className="border border-[#8b3e2f]" />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="email">Email</Label>
+            <Input id="email" placeholder="Your Email" className="border border-[#8b3e2f]" />
+          </div>
+        </div>
+        <div className="space-y-2">
+          <Label htmlFor="message">Message</Label>
+          <Textarea id="message" placeholder="Your Message" className="border border-[#8b3e2f] min-h-[100px]" />
+        </div>
+        <Button
+          className="bg-[#d2691e] text-white hover:bg-[#a0522d]"
+          onClick={handleSendEmail}
+        >
+          Send Us
+        </Button>
+      </div>
+    </div>
+  )
 }
 
 export default function SMPValvesUI() {
@@ -556,7 +546,7 @@ export default function SMPValvesUI() {
                 <Twitter className="h-6 w-6" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/smp-control-systems-private-limited/"
                 className="text-white hover:text-orange-400 transition-colors"
               >
                 <Linkedin className="h-6 w-6" />
