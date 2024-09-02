@@ -456,7 +456,7 @@ export default function SMPValvesUI() {
           </div>
         </section>
         {/* Why Choose Us Section */}
-        <section className="mb-16 bg-orange-400 py-12 px-8 rounded-lg">
+        <section className="bg-orange-400 text-white py-12 px-6 md:px-12 lg:px-24">
           <h2 className="text-3xl font-bold mb-8 text-center">
             Why Choose SMP Controls?
           </h2>
