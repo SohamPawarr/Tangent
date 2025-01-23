@@ -57,7 +57,7 @@ function Contact() {
     const email = (document.getElementById('email') as HTMLInputElement).value;
     const message = (document.getElementById('message') as HTMLTextAreaElement).value;
 
-    const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=scspl.smp@gmail.com.com&su=Contact%20Us&body=${encodeURIComponent(
+     const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=sales@scspl-smp.com.com&su=Contact%20Us&body=${encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
     )}&tf=1`;
 
